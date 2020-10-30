@@ -14,22 +14,29 @@ function findAll() {
 }
 
 function findBy(filter) {
-    return db("projects").where(filter).first();
+    return db("projects")
+    .where(filter).first();
 }
 
 function findById(id) {
-    return db("projects").where({id: id}).first();
+    return db("projects")
+    .where({id}).first();
 }
 
-function add(user) {
-    return db("projects").insert(user, "id").then(ids => findById(ids[0]));
+function add(project) {
+    return db("projects")
+    .insert(project, "id")
+    .then(ids => findById(ids[0]));
 }
 
-function update(changes, id) {
-    return db("projects").where({ id: id }).update(changes).then(() => findById(id));
+function update(id, changes) {
+    return db("projects")
+        .where({ id })
+        .update(changes, '*')
 }
 
 function remove(id) {
-    return db("projects").where({id: id}).delete();
+    return db("projects")
+    .where({ id }).del();
 }
 
