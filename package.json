@@ -1,0 +1,38 @@
+{
+  "name": "melissa-longenberger",
+  "version": "1.0.0",
+  "description": "Portfolio Site with Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melissa-24/melissa-longenberger.git"
+  },
+  "author": "Melissa Longenberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melissa-24/melissa-longenberger.git/issues"
+  },
+  "homepage": "https://github.com/melissa-24/melissa-longenberger.git#readme",
+  "dependencies": {
+    "connect-session-knex": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.1",
+    "knex": "^0.21.9",
+    "knex-cleaner": "^1.3.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.6"
+  }
+}
