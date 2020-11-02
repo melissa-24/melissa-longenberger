@@ -4,7 +4,7 @@ const Projects = () => {
 
     return (
         <div className='projects'>
-        <h3>Current Projects</h3>
+            <h3>Current Projects</h3>
         </div>
     )
 }
