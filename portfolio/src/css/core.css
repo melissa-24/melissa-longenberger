@@ -6,25 +6,11 @@
   src: local('Bad Script Regular'), local('BadScript-Regular'), url(https://fonts.gstatic.com/s/badscript/v9/6NUT8F6PJgbFWQn47_x7lOw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Caveat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v8/Wnz6HAc5bAfYB2QLYQ.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Coming Soon';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Coming Soon Regular'), local('ComingSoon-Regular'), url(https://fonts.gstatic.com/s/comingsoon/v12/qWcuB6mzpYL7AJ2VfdQR1u-S.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Turret Road';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: local('Turret Road ExtraLight'), local('TurretRoad-ExtraLight'), url(https://fonts.gstatic.com/s/turretroad/v2/pxidypMgpcBFjE84Zv-fE0ONEdeL.ttf) format('truetype');
 }
 body {
   display: flex;
@@ -150,6 +136,10 @@ body #root .main .projects h2 {
   font-family: 'Coming Soon', cursive;
   letter-spacing: 0.2em;
 }
+body #root .main .projects h4 {
+  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
+}
 body #root .main .projects .project-card {
   display: flex;
   flex-direction: column;
@@ -180,7 +170,77 @@ body #root .main .projects .project-card .links a {
   color: black;
 }
 body #root .main .projects .project-card img {
+  width: 55%;
+  padding: 0.5em;
+}
+body #root .main .resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .resume h2 {
+  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
+}
+body #root .main .resume h4 {
+  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
+}
+body #root .main .resume .resume-parts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
   width: 75%;
+}
+body #root .main .resume .resume-parts .skills-education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+body #root .main .resume .resume-parts .skills-education .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .resume .resume-parts .skills-education .skills table tr td {
+  padding: 0 0.5em;
+}
+body #root .main .resume .resume-parts .skills-education .education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .resume .resume-parts .skills-education .education table tr td {
+  padding: 0 0.5em;
+}
+body #root .main .resume .resume-parts .positions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+body #root .main .resume .resume-parts .positions table tr th {
+  padding: 0.5em 0;
+}
+body #root .main .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
+}
+body #root .main .contact h2 {
+  text-align: center;
 }
 body #root .main footer {
   font-family: 'Bad Script', cursive;

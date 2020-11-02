@@ -13,8 +13,8 @@ const PastProjects = () => {
 
     useEffect(() => {
         setAppState({ loading: true })
-        // const baseURL = `https://ml-fullstack-portfolio.herokuapp.com/past-projects`
-        const baseURL = `http://localhost:5555/past-projects`
+        const baseURL = `https://ml-fullstack-portfolio.herokuapp.com/past-projects`
+        // const baseURL = `http://localhost:5555/past-projects`
         fetch(baseURL)
             .then((res) => res.json())
             .then((projects) => {
@@ -24,7 +24,8 @@ const PastProjects = () => {
 
     return (
         <div className='projects'>
-            <h3>Past Projects</h3>
+            <h2>Past Projects</h2>
+            <h4>Projects in this list are no longer being updated or hosted in most cases</h4>
             <ListLoading isLoading={appState.loading} projects={appState.projects} />
         </div>
     )

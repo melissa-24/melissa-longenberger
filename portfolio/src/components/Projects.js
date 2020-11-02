@@ -13,8 +13,8 @@ const Projects = () => {
 
     useEffect(() => {
         setAppState({ loading: true })
-        // const baseURL = `https://ml-fullstack-portfolio.herokuapp.com/projects`
-        const baseURL = `http://localhost:5555/projects`
+        const baseURL = `https://ml-fullstack-portfolio.herokuapp.com/projects`
+        // const baseURL = `http://localhost:5555/projects`
         fetch(baseURL)
             .then((res) => res.json())
             .then((projects) => {
@@ -25,6 +25,7 @@ const Projects = () => {
     return (
         <div className='projects'>
             <h2>Current Projects</h2>
+            <h4>Projects on this page are live and in many cases still being updated as needed</h4>
             <ListLoading isLoading={appState.loading} projects={appState.projects} />
         </div>
     )

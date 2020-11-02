@@ -10,7 +10,8 @@ const NavOptions = (props) => {
         "Home",
         "Current Projects",
         "Past Projects",
-        "Resume"
+        "Resume",
+        "Contact Me"
     ]
 
     const handleClick = (e) => {

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Coming+Soon&family=Turret+Road:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Coming+Soon&display=swap');
 
 // font-family: 'Bad Script', cursive;
-// font-family: 'Caveat', cursive;
 // font-family: 'Coming Soon', cursive;
-// font-family: 'Turret Road', cursive;
+// letter-spacing: .2em;
 
 body {
     display: flex;
@@ -128,6 +127,10 @@ body {
                     font-family: 'Coming Soon', cursive;
                     letter-spacing: .2em;
                 }
+                h4 {
+                    font-family: 'Coming Soon', cursive;
+                    letter-spacing: .2em;
+                }
                 .project-card {
                     display: flex;
                     flex-direction: column;
@@ -157,9 +160,92 @@ body {
                         }
                     }
                     img {
-                        width: 75%;
+                        width: 55%;
+                        padding: .5em;
                     }
                 }
+            }
+            .resume {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    font-family: 'Coming Soon', cursive;
+                    letter-spacing: .2em;
+                }
+                h4 {
+                    font-family: 'Coming Soon', cursive;
+                    letter-spacing: .2em;
+                }
+                .resume-parts {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-family: 'Coming Soon', cursive;
+                    letter-spacing: .2em;
+                    width: 75%;
+                    .skills-education {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 45%;
+                        .skills {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            table {
+                                tr {
+                                    td {
+                                        padding: 0 .5em;
+                                    }
+                                }
+                            }
+                        }
+                        .education {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            table {
+                                tr {
+                                    td {
+                                        padding: 0 .5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .positions {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 45%;
+                        table {
+                            tr {
+                                th {
+                                    padding: .5em 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Coming Soon', cursive;
+                letter-spacing: .2em;
+                h2 {
+                    text-align: center;
+                }
+
             }
             footer {
                 font-family: 'Bad Script', cursive;

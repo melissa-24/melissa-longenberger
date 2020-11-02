@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import PastProjects from './components/PastProjects'
 import Resume from './components/Resume'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -36,6 +37,9 @@ const App = () => {
         </Route>
         <Route path='/Resume'>
           <Resume />
+        </Route>
+        <Route path='/Contact Me'>
+          <Contact />
         </Route>
         <Route exact path='/'>
           <Home />
