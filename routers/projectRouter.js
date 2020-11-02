@@ -3,7 +3,7 @@ const Projects = require('./projectModel')
 
 router.get('/', (req, res, next) => {
     Projects.findAll()
-        .then(projects => res.status(200).json(projects))
+        .then(projects => res.status(200).json({data: projects}))
         .catch(err => next({ code: 500, message: 'Problems getting Projects', err}))
 })
 
@@ -12,7 +12,7 @@ router.get('/:id', (req, res) => {
     Projects.findById(req.params.id)
         .then(project => {
             if (project) {
-                res.status(200).json(project)
+                res.status(200).json({data: project})
             } else {
                 res.status(404).json({ message: 'ID not found'})
             }
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Projects.add(req.body)
         .then(project => {
-            res.status(201).json(project)
+            res.status(201).json({data: project})
         })
         .catch(err => {
             console.log(err)
@@ -38,7 +38,7 @@ router.put('/:id', (req, res) => {
     Projects.update(req.params.id, req.body)
     .then(project => {
         if (project) {
-            res.status(200).json(project)
+            res.status(200).json({data: project})
         } else {
             res.status(404).json({ message: 'ID not found' })
         }

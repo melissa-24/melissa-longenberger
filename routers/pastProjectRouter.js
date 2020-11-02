@@ -3,7 +3,7 @@ const PastProjects = require('./pastProjectModel')
 
 router.get('/', (req, res) => {
     PastProjects.findAll()
-        .then(pastProjects => res.status(200).json(pastProjects))
+        .then(pastProjects => res.status(200).json({data: pastProjects}))
         .catch(err => orWhereNotExists({ code: 500, message: "Problem getting Projects", err}))
 })
 
@@ -12,7 +12,7 @@ router.get('/:id', (req, res) => {
     PastProjects.findById(req.params.id)
     .then(pastProject => {
         if (pastProject) {
-            res.status(200).json(pastProject)
+            res.status(200).json({data: pastProject})
         } else {
             res.status(404).json({ message: 'ID not found'})
         }
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     PastProjects.add(req.body)
     .then(pastProject => {
-        res.status(201).json(pastProject)
+        res.status(201).json({data: pastProject})
     })
     .catch(err => {
         console.log(err)
@@ -38,7 +38,7 @@ router.put('/:id', (req, res) => {
     PastProjects.update(req.params.id, req.body)
     .then(pastProject => {
         if (pastProject) {
-            res.status(200).json(pastProject)
+            res.status(200).json({data: pastProject})
         } else {
             res.status(404).json({ message: 'ID not found' })
         }
