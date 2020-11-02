@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Coming+Soon&family=Turret+Road:wght@200&display=swap');
+
+// font-family: 'Bad Script', cursive;
+// font-family: 'Caveat', cursive;
+// font-family: 'Coming Soon', cursive;
+// font-family: 'Turret Road', cursive;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #aea9a5a6;
+    #root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: .2em;
+                .head {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: .4em;
+                    img {
+                        width: 6%;
+                        border-radius: 50%;
+                    }
+                    .heading {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Bad Script', cursive;
+                        margin-left: .8em;
+                        h1 {
+                            letter-spacing: .1em;
+                        }
+                        h3 {
+                            letter-spacing: .2em;
+                        }
+                    }
+                }
+                nav {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 95%;
+                    background-color: #aea9a5;
+                    .navbar {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+                        .nav-option {
+                            text-decoration: none;
+                            cursor: pointer;
+                            font-family: 'Coming Soon', cursive;
+                        }
+                        .nav-optionclicked {
+                            font-weight: bold;
+                            font-family: 'Coming Soon', cursive;
+                            font-size: 1.2em;
+                            background-color: #909970;
+                            padding: .2em 1em;
+                            
+                        }
+                    }
+                    .nav-small {
+                        width: 100%;
+                        display: none;
+                    }
+                }
+            }
+            .about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                margin-top: .5em;
+                .about-start {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .text {
+                        p {
+                            font-family: 'Coming Soon', cursive;
+                            font-size: 1.2em;
+                        }
+                    }
+                    img {
+                        width: 45%;
+                        border-radius: 50%;
+                    }
+                }
+                .about-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        font-family: 'Coming Soon', cursive;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            .projects {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3 {
+                    font-family: 'Coming Soon', cursive;
+                }
+            }
+            footer {
+                font-family: 'Bad Script', cursive;
+                background-color: #aea9a5;
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: .2em;
+            }
+        }
+    }
+}
+
+
+@import './media.less';

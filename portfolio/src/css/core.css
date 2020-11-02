@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(https://fonts.gstatic.com/s/badscript/v9/6NUT8F6PJgbFWQn47_x7lOw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v8/Wnz6HAc5bAfYB2QLYQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Coming Soon Regular'), local('ComingSoon-Regular'), url(https://fonts.gstatic.com/s/comingsoon/v12/qWcuB6mzpYL7AJ2VfdQR1u-S.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Turret Road';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Turret Road ExtraLight'), local('TurretRoad-ExtraLight'), url(https://fonts.gstatic.com/s/turretroad/v2/pxidypMgpcBFjE84Zv-fE0ONEdeL.ttf) format('truetype');
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #aea9a5a6;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2em;
+}
+body #root .main header .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.4em;
+}
+body #root .main header .head img {
+  width: 6%;
+  border-radius: 50%;
+}
+body #root .main header .head .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bad Script', cursive;
+  margin-left: 0.8em;
+}
+body #root .main header .head .heading h1 {
+  letter-spacing: 0.1em;
+}
+body #root .main header .head .heading h3 {
+  letter-spacing: 0.2em;
+}
+body #root .main header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  background-color: #aea9a5;
+}
+body #root .main header nav .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+body #root .main header nav .navbar .nav-option {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Coming Soon', cursive;
+}
+body #root .main header nav .navbar .nav-optionclicked {
+  font-weight: bold;
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.2em;
+  background-color: #909970;
+  padding: 0.2em 1em;
+}
+body #root .main header nav .nav-small {
+  width: 100%;
+  display: none;
+}
+body #root .main .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-top: 0.5em;
+}
+body #root .main .about .about-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .about .about-start .text p {
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.2em;
+}
+body #root .main .about .about-start img {
+  width: 45%;
+  border-radius: 50%;
+}
+body #root .main .about .about-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .about .about-body p {
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.2em;
+}
+body #root .main .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .main .projects h3 {
+  font-family: 'Coming Soon', cursive;
+}
+body #root .main footer {
+  font-family: 'Bad Script', cursive;
+  background-color: #aea9a5;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 730px) {
+  .nav-small {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
