@@ -148,6 +148,7 @@ body #root .main .projects {
 }
 body #root .main .projects h3 {
   font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.2em;
 }
 body #root .main footer {
   font-family: 'Bad Script', cursive;
