@@ -164,7 +164,7 @@ body {
                         }
                     }
                     img {
-                        width: 55%;
+                        width: 85%;
                         padding: .5em;
                     }
                 }
@@ -213,16 +213,20 @@ body {
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            width: 95%;
+                            width: 155%;
                             .desktop {
                                 display: none;
                             }
                             .mobile {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                                width: 95%;
+                                tr {
+                                    td {
+                                        padding: .2em 0 .5em 0;
+                                    }
+                                    .next {
+                                        padding-top: 1em;
+                                    }
+                                }
+
                             }
                         }
                     }
@@ -231,18 +235,23 @@ body {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        width: 45%;
-                        .desktop {
-                            display: none;
-                        }
-                        .mobile {
+                        width: 125%;
+                        table {
                             tr {
-                                th {
-                                    padding: .5em 0;
+                                td {
+                                    padding: 0 .5em .5em .5em;
+                                }
+                                .next {
+                                    padding-top: 1em;
                                 }
                             }
+
                         }
                     }
+                }
+                h4 {
+                    font-family: 'Coming Soon', cursive;
+                    letter-spacing: .2em;
                 }
             }
             .contact {
@@ -252,8 +261,20 @@ body {
                 align-items: center;
                 font-family: 'Coming Soon', cursive;
                 letter-spacing: .2em;
-                h2 {
-                    text-align: center;
+                .reach {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 75%;
+                    h2 {
+                        text-align: center;
+                    }
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        width: 75%;
+                        word-wrap: break-word;
+                    }
                 }
             }
             footer {

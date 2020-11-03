@@ -10,7 +10,7 @@ const Contact = () => {
                 <p>LinkedIn: <a href='https://www.linkedin.com/in/melissa-longenberger'>My Profile Page</a></p>
                 <p>GitHub: <a href='https://github.com/melissa-24'>Personal Profile</a></p>
             </div>
-            <div className='places'>
+            <div className='reach'>
                 <h2>Other places to find me</h2>
                 <p>GitHub Organization: <a href='https://github.com/beedev-services'>BeeDev Services</a></p>
                 <p>GitHub Organization: <a href='https://github.com/BeeDev-IT-Services-Coding-DoJo'>BeeDev DoJo - For lessons that I teach</a></p>

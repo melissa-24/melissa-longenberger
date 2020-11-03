@@ -5,49 +5,226 @@
 @530: ~"only screen and (min-width: 530px)";
 @400: ~"only screen and (min-width: 400px)";
 
+@media @400 {
+    body {
+        #root {
+            .main {
+                header {
+                    nav {
+                        width: 115%;
+                    }
+                }
+                .about {
+                    .about-start {
+                        img {
+                            width: 35%;
+                        }
+                    }
+                }
+                .projects {
+                    .project-card {
+                        img {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media @530 {
+    body {
+        #root {
+            .main {
+                header {
+                    nav {
+                        width: 150%;
+                    }
+                }
+                .about {
+                    .about-start {
+                        img {
+                            width: 30%;
+                        }
+                    }
+                }
+                .resume {
+                    .resume-parts {
+                        .skills-education {
+                            .skills {
+                                .mobile {
+                                    display: none;
+                                }
+                                .desktop {
+                                    display: block;
+                                    tr {
+                                        td {
+                                            padding: 0 .5em;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact {
+                    .reach {
+                        p {
+                            flex-direction: row;
+                            a {
+                                padding-left: .5em;;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media @730 {
+    body {
+        #root {
+            .main {
+                header {
+                    .head {
+                        flex-direction: row;
+                        img {
+                            display: flex;
+                            width: 14%;
+                            border-radius: 50%;
+                            margin-right: 1em;
+                        }
+                    }
+                    nav {
+                        width: 95%;
+                        .nav-small {
+                            display: none;
+                        }
+                        .navbar {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-around;
+                            .nav-option {
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-family: 'Coming Soon', cursive;
+                            }
+                            .clicked {
+                                font-weight: bold;
+                                font-family: 'Coming Soon', cursive;
+                                font-size: 1.2em;
+                                background-color: #909970;
+                                padding: .2em 1em;
+                            }
+                        }
+                    }
+                }
+                .about {
+                    .about-start {
+                        flex-direction: row;
+                        .text {
+                            width: 65%;
+                            margin-right: 1em;
+                        }
+                        img {
+                            width: 25%;
+                        }
+                    }
+                }
+                .resume {
+                    .resume-parts {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media @850 {
+    body {
+        #root {
+            .main {
+                header {
+                    .head {
+                        img {
+                            width: 12%;
+                        }
+                    }
+                }
+                .about {
+                    width: 65%;
+                    .about-start {
+                        img {
+                            width: 20%;
+                        }
+                    }
+                }
+                .resume {
+                    .resume-parts {
+                        width: 65%;
+                        .skills-education {
+                            flex-direction: row;
+                            width: 115%;
+                            .skills {
+                                padding-right: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-// @media screen and (max-width: 730px) {
-//     .nav-small {
-//         display: block;
-//     }
-//     .navbar {
-//         display: none;
-//     }
-// }
-// .navbar {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-around;
-//     .nav-option {
-//         text-decoration: none;
-//         cursor: pointer;
-//         font-family: 'Coming Soon', cursive;
-//     }
-//     .nav-optionclicked {
-//         font-weight: bold;
-//         font-family: 'Coming Soon', cursive;
-//         font-size: 1.2em;
-//         background-color: #909970;
-//         padding: .2em 1em;
-        
-//     }
-// }
-// img {
-//     width: 6%;
-//     border-radius: 50%;
-// }
+@media @1000 {
+    body {
+        #root {
+            .main {
+                header {
+                    .head {
+                        img {
+                            width: 8%;
+                        }
+                    }
+                }
+                .about {
+                    width: 50%;
+                    .about-start {
+                        img {
+                            width: 20%;
+                        }
+                    }
+                }
+                .projects {
+                    .project-card {
+                        img {
+                            width: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-// .desktop {
-//     table {
-//         tr {
-//             td {
-//                 padding: 0 .5em;
-//             }
-//         }
-//     }
-// }
+@media @1330 {
+    body {
+        #root {
+            .main {
+                header {
+                    .head {
+                        img {
+                            width: 6%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

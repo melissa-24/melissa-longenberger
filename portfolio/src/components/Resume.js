@@ -34,9 +34,6 @@ const Resume = () => {
                                 <td>RestFull API</td>
                                 <td>React</td>
                             </tr>
-                            <tr>
-                                <td>MySQL</td>
-                            </tr>
                         </table>
                         <table className='desktop'>
                             <tr>
@@ -47,33 +44,36 @@ const Resume = () => {
                             <tr>
                                 <td>CSS3</td>
                                 <td>Express</td>
-                                <td>PostgreSQL</td>
+                                <td>React</td>
                             </tr>
                             <tr>
                                 <td>LESS</td>
-                                <td>Relational Databases</td>
                                 <td>Python</td>
+                                <td>PostgreSQL</td>
                             </tr>
                             <tr>
                                 <td>Java Script</td>
                                 <td>RestFull API</td>
-                            </tr>
-                            <tr>
-                                <td>React</td>
-                                <td>MySQL</td>
-                            </tr>
-                            <tr>
-                                
-                                
+                                <td>Relational Databases</td>
                             </tr>
                         </table>
                     </div>
                     <div className='education'>
                         <h3>Education</h3>
-                        <div className='mobile'>
-                            <h4>Lambda School - 3/2021</h4>
-                            <p>Full Stack Web Developer Track</p>
-                        </div>
+                        <table className='mobile'>
+                            <tr>
+                                <th>Lambda School - 3/2021</th>
+                            </tr>
+                            <tr>
+                                <td>Full Stack Web Developer Track</td>
+                            </tr>
+                            <tr>
+                                <th className='next'>Dutchess Community College - 2014</th>
+                            </tr>
+                            <tr>
+                                <td>AS Business Administration</td>
+                            </tr>
+                        </table>
                         <table className='desktop'>
                             <tr>
                                 <th>School</th>
@@ -116,7 +116,7 @@ const Resume = () => {
                             </td>
                         </tr>
                         <tr>
-                            <th>Owner - BeeDev Services</th>
+                            <th className='next'>Owner - BeeDev Services</th>
                             <th>4/2020</th>
                         </tr>
                         <tr>
