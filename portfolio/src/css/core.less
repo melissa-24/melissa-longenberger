@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #aea9a5a6;
+    background-color: #f3f2f2;
     #root {
         display: flex;
         flex-direction: column;
@@ -28,13 +28,12 @@ body {
                 margin: .2em;
                 .head {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     padding-bottom: .4em;
                     img {
-                        width: 6%;
-                        border-radius: 50%;
+                        display: none;
                     }
                     .heading {
                         display: flex;
@@ -42,9 +41,9 @@ body {
                         align-items: center;
                         justify-content: center;
                         font-family: 'Bad Script', cursive;
-                        margin-left: .8em;
                         h1 {
                             letter-spacing: .1em;
+                            text-align: center;
                         }
                         h3 {
                             letter-spacing: .2em;
@@ -59,28 +58,28 @@ body {
                     width: 95%;
                     background-color: #aea9a5;
                     .navbar {
-                        width: 100%;
+                        display: none;
+                    }
+                    .nav-small {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: space-around;
                         .nav-option {
                             text-decoration: none;
                             cursor: pointer;
                             font-family: 'Coming Soon', cursive;
+                            width: 50%;
+                            text-align: center;
+                            &:hover {
+                                background-color: #909970;
+                            }
                         }
-                        .nav-optionclicked {
-                            font-weight: bold;
+                        .button {
                             font-family: 'Coming Soon', cursive;
                             font-size: 1.2em;
-                            background-color: #909970;
-                            padding: .2em 1em;
-                            
+                            border: 2px groove #909970;
                         }
-                    }
-                    .nav-small {
-                        width: 100%;
-                        display: none;
                     }
                 }
             }
@@ -89,14 +88,15 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 40%;
+                width: 85%;
                 margin-top: .5em;
                 .about-start {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column-reverse;
                     align-items: center;
                     justify-content: center;
                     .text {
+                        text-align: center;
                         p {
                             font-family: 'Coming Soon', cursive;
                             font-size: 1.2em;
@@ -112,6 +112,7 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    text-align: center;
                     p {
                         font-family: 'Coming Soon', cursive;
                         font-size: 1.2em;
@@ -130,6 +131,7 @@ body {
                 h4 {
                     font-family: 'Coming Soon', cursive;
                     letter-spacing: .2em;
+                    text-align: center;
                 }
                 .project-card {
                     display: flex;
@@ -146,6 +148,8 @@ body {
                     h4 {
                         font-family: 'Coming Soon', cursive;
                         letter-spacing: .2em;
+                        text-align: center;
+                        width: 75%;
                     }
                     .links {
                         display: flex;
@@ -174,13 +178,9 @@ body {
                     font-family: 'Coming Soon', cursive;
                     letter-spacing: .2em;
                 }
-                h4 {
-                    font-family: 'Coming Soon', cursive;
-                    letter-spacing: .2em;
-                }
                 .resume-parts {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: space-around;
                     font-family: 'Coming Soon', cursive;
@@ -191,16 +191,19 @@ body {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        width: 45%;
+                        width: 75%;
                         .skills {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            table {
+                            .desktop {
+                                display: none;
+                            }
+                            .mobile {
                                 tr {
                                     td {
-                                        padding: 0 .5em;
+                                        padding: .1em 1.5em;
                                     }
                                 }
                             }
@@ -210,12 +213,16 @@ body {
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            table {
-                                tr {
-                                    td {
-                                        padding: 0 .5em;
-                                    }
-                                }
+                            width: 95%;
+                            .desktop {
+                                display: none;
+                            }
+                            .mobile {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 95%;
                             }
                         }
                     }
@@ -225,7 +232,10 @@ body {
                         align-items: center;
                         justify-content: center;
                         width: 45%;
-                        table {
+                        .desktop {
+                            display: none;
+                        }
+                        .mobile {
                             tr {
                                 th {
                                     padding: .5em 0;
@@ -245,7 +255,6 @@ body {
                 h2 {
                     text-align: center;
                 }
-
             }
             footer {
                 font-family: 'Bad Script', cursive;
@@ -256,10 +265,13 @@ body {
                 align-items: center;
                 justify-content: center;
                 letter-spacing: .2em;
+                p {
+                    width: 65%;
+                    text-align: center;
+                }
             }
         }
     }
 }
-
 
 @import './media.less';

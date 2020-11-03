@@ -9,7 +9,36 @@ const Resume = () => {
                 <div className='skills-education'>
                     <div className='skills'>
                         <h3>Skills</h3>
-                        <table>
+                        <table className='mobile'>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>NodeJs</td>
+                            </tr>
+                            <tr>
+                                <td>Cypress</td>
+                                <td>CSS3</td>
+                            </tr>
+                            <tr>
+                                <td>Express</td>
+                                <td>PostgreSQL</td>
+                            </tr>
+                            <tr>
+                                <td>LESS</td>
+                                <td>Relational Databases</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Java Script</td>
+                            </tr>
+                            <tr>
+                                <td>RestFull API</td>
+                                <td>React</td>
+                            </tr>
+                            <tr>
+                                <td>MySQL</td>
+                            </tr>
+                        </table>
+                        <table className='desktop'>
                             <tr>
                                 <td>HTML5</td>
                                 <td>NodeJs</td>
@@ -22,11 +51,11 @@ const Resume = () => {
                             </tr>
                             <tr>
                                 <td>LESS</td>
-                                <td>Databases</td>
+                                <td>Relational Databases</td>
                                 <td>Python</td>
                             </tr>
                             <tr>
-                                <td>JS</td>
+                                <td>Java Script</td>
                                 <td>RestFull API</td>
                             </tr>
                             <tr>
@@ -41,7 +70,11 @@ const Resume = () => {
                     </div>
                     <div className='education'>
                         <h3>Education</h3>
-                        <table>
+                        <div className='mobile'>
+                            <h4>Lambda School - 3/2021</h4>
+                            <p>Full Stack Web Developer Track</p>
+                        </div>
+                        <table className='desktop'>
                             <tr>
                                 <th>School</th>
                                 <th>Course of Study</th>

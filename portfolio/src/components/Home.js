@@ -20,7 +20,7 @@ const Home = () => {
                     When I started I self taught myself the basics of HTML and CSS, so that I could create a website to show off my kids to my family.  As the years went on I learned more on my own.  
                 </p>
                 <p>
-                    At the beginning of 2020 I started Lambda School to become a Full Stack Web Developer.  The please take a look at my current and past projects to see what I am doing and have done. 
+                    At the beginning of 2020 I started Lambda School to become a Full Stack Web Developer.  Please take a look at my current and past projects to see what I am doing and have done. 
                 </p>
             </div>
         </div>

@@ -47,7 +47,7 @@ const App = () => {
       </Switch>
       <footer>
         <p>Melissa Longenberger &#169; 2020</p>
-        <p>Base react app created using npm package Lambda React by a fellow Lambda Student</p>
+        <p>Base react app created using npm package Lambda-React by a fellow Lambda Student</p>
       </footer>
     </div>
   );

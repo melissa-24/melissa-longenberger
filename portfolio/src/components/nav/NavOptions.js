@@ -24,7 +24,7 @@ const NavOptions = (props) => {
 
     return (
         navOptions.map(option => 
-            <div className={"nav-option" + (activeItem === option ? "clicked" : '')}
+            <div className={"nav-option" + (activeItem === option ? " clicked" : '')}
             onClick={handleClick}
             nav={option}
             key={option}
